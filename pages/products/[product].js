@@ -1,6 +1,4 @@
 
-
-
 import ProductPageContent from "../../components/ProductPageContent";
 import { getAllProducts ,getProduct } from "../../lib/shopify";
 

@@ -1,9 +1,9 @@
 const navigation = [
-    {name:'About',href:'#' },
-    {name:'Contact',href:'#' },
-    {name:'Shop',href:'#' },
-    {name:'About',href:'#' },
-    {name:'Terms and Conditons',href:'#' },
+    {name:'About',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'Contact',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'Shop',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'About',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'Terms and Conditons',href:'https://www.linkedin.com/in/hectorugc/' },
 ]
 
 const Footer = () => {
