@@ -1,14 +1,14 @@
 const navigation = [
-    {name:'About',href:'#' },
-    {name:'Contact',href:'#' },
-    {name:'Shop',href:'#' },
-    {name:'About',href:'#' },
-    {name:'Terms and Conditons',href:'#' },
+    {name:'About',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'Contact',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'Shop',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'About',href:'https://www.linkedin.com/in/hectorugc/' },
+    {name:'Terms and Conditons',href:'https://www.linkedin.com/in/hectorugc/' },
 ]
 
 const Footer = () => {
     return (
-        <footer className="bg-white">
+         <footer className="bg-white">
             <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
                 <nav className=" flex flex-wrap justify-center">
                     {

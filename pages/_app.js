@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter()
   return(
     <ShopProvider>
-      <Layout>
+      <Layout >
       <Component {...pageProps} key={router.asPath} />
     </Layout>
     </ShopProvider>
@@ -18,3 +18,6 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+
+
