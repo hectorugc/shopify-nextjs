@@ -1,14 +1,16 @@
-import {getProductInCollection} from "../lib/shopify"
+import {getProductInCollection,getCollections, getProductInCollectionAutom} from "../lib/shopify"
 import ProductList from '../components/ProductList';
 import Hero from '../components/Hero';
 import FeatureSection from '../components/FeatureSection';
-export default function Home({products}) {
- 
+import { PromoSection } from "../components/PromoSection";
+export default function Home({products,collections,productAutumn}) {
+console.warn("Collections Autumn",productAutumn);
   return (
     <div className="">
-     <Hero/>
+     <Hero collections={collections}/>
+     <PromoSection  productAutumn={productAutumn}/>
      <ProductList products={products}/>
-     <FeatureSection/>
+    
    </div>
   )
 }
@@ -19,8 +21,10 @@ export default function Home({products}) {
 
 export async function getStaticProps() {
   const products = await getProductInCollection()
+  const productAutumn = await getProductInCollectionAutom()
+  const collections = await getCollections()
   return {
-    props: {products}, // will be passed to the page component as props
+    props: {products,collections,productAutumn}, // will be passed to the page component as props
   }
 }
 
